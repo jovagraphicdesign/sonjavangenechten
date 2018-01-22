@@ -1,0 +1,44 @@
+.showcase
+    background: url(../../images/sonja-foto1.jpg)
+    background-position: center center
+    background-size: cover
+    height: 100vh
+    margin-top: -64px
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%)
+
+.titel, .subtitel
+    margin: 0
+    color: $bodyBG
+
+.titel, .subtitel
+    position: relative
+    top: 50%
+    left: 15%
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.6);
+
+.titel
+    font-family: 'Bitter', serif
+    font-size: 48px
+
+.subtitel
+    font-size: 36px
+
+@media only screen and (max-width: 768px)
+    .showcase 
+        h1 
+            font-size: 36px
+            letter-spacing: 1.8px
+
+        h2 
+            font-size: 32px
+
+@media only screen and (max-width: 480px)
+    .showcase 
+        h1 
+            font-size: 28px
+            letter-spacing: 0.9px
+
+        h2 
+            font-size: 24px
+
+

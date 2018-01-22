@@ -1,0 +1,72 @@
+.section4
+    height: 70vh
+    position: relative
+    .contact-form
+        padding: 50px 10px
+        height: 115%
+        width: 80%
+        background: $bodyBG
+        position: absolute
+        top: -30%
+        left: 50%
+        transform: translateX(-50%)
+        box-shadow: 5px 7px 25px rgba(64,60,62,0.35)
+        color: $grayBG
+        .btn
+            background-color: $greenBG !important
+            margin-left: 55px
+        h4 
+            padding-bottom: 25px
+            margin-left: 20px
+    .adres
+        position: absolute
+        top: 120px
+        right: 80px
+        h5 
+            font-weight: 600
+            text-decoration: underline
+        
+        a 
+            color: $greenBG
+
+
+
+// aanpassing van de materialize framework om de site-themakleuren te hebben in het contact form
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) 
+    border-bottom: 1px solid $greenBG
+    -webkit-box-shadow: 0 1px 0 0 $greenBG
+    box-shadow: 0 1px 0 0 $greenBG
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label 
+    color: $greenBG
+
+.input-field .prefix
+    color: $grayBG
+
+.input-field .prefix.active
+    color: $greenBG

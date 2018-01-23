@@ -13,6 +13,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.css" />
     <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="/bower_components/aos/dist/aos.css" />
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -63,14 +64,14 @@
 
     <!-- Showcase -->
     <div class="showcase">
-      <h1 class="titel animated fadeInLeft">Sonja Van Genechten</h1>
-      <h2 class="subtitel animated fadeInUpBig">Praktijk voor Psychotherapie</h2>
+      <h1 class="titel" data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" >Sonja Van Genechten</h1>
+      <h2 class="subtitel" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500" data-aos-once="true">Praktijk voor Psychotherapie</h2>
     </div>
     <!-- End Showcase -->
 
     <!-- Section 1 Werkwijze -->
     <section id="werkwijze" class="section1">
-      <div class="container">
+      <div class="container" data-aos-offset="200" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" >
         <h4 class="section-titel">Werkwijze</h4>
         <p>Soms zijn er momenten in je leven dat je behoefte hebt aan extra ondersteuning. Graag bied ik jou die steun op emotioneel en persoonlijk vlak.</p>
         <p>Vanuit een oplossingsgerichte aanpak bied ik jou een luisterend oor en gaan we samen jouw doelen bepalen. We maken hierbij gebruik van jouw krachten en hulpbronnen die we op een actieve manier gaan inzetten om verder te kunnen groeien en opnieuw uitdagingen in het leven te kunnen aangaan.</p>
@@ -88,10 +89,10 @@
     <!-- Section 2 Over Mezelf -->
     <section id="over-mezelf" class="section2">
       <div class="container">
-        <h4 class="titel-section2">Over Mezelf</h4>
+        <h4 class="titel-section2" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Over Mezelf</h4>
         <img id="foto-sonja" class="hide-on-large-only mobile circle responsive-img" src="./images/foto-Sonja.png" alt="portret van Sonja Van Genechten">
         <div class="row">
-          <div class="col l6 s12">
+          <div class="col l6 s12" data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-once="true" >
             <p>Het algemeen (psychisch) welzijn van de mens draag ik hoog in het vaandel, ik volg dan ook regelmatig diverse opleidingen en workshops om mij verder te bekwamen en op de hoogte te blijven van de recente ontwikkelingen.</p>
             <a id="mobile-hide-section2" class="hide-on-large-only" href="#">Meer lezen</a>
             <p class="hide-on-med-and-down hidden-text-section2">Ik ben lid van twee intervisiegroepen bestaande uit collega-therapeuten met verschillende opleidingsachtergronden en -ervaringen. Op regelmatige tijdstippen komen wij samen om ons eigen functioneren te bespreken en onze manier van werken telkens bij te sturen en te vernieuwen.</p>
@@ -99,7 +100,7 @@
             Naast mijn psychologische en psychotherapeutische achtergrond heb ik ruim 20 jaar ervaring binnen Human Resources en beschik ik over de nodige levenservaring.
             </p>
           </div>
-          <div class="col l6 s12">
+          <div class="col l6 s12" data-aos="fade-left" data-aos-delay="500" data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-once="true">
             <div class="border-left">
               <h6 class="subtitel-section2 hide-on-med-and-down">Gevolgde opleidingen:</h6>
               <a id="mobile-hide-opleiding" class="hide-on-large-only" href="#">Gevolgde opleidingen:</a>
@@ -118,7 +119,7 @@
             </div>
           </div>
         </div>
-        <img id="foto-sonja" class="hide-on-med-and-down circle responsive-img" src="./images/foto-Sonja.png" alt="portret van Sonja Van Genechten">
+        <img id="foto-sonja" class="hide-on-med-and-down circle responsive-img" src="./images/foto-Sonja.png" alt="portret van Sonja Van Genechten" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true">
       </div>
     </section>
     <!-- End Section 2 Over Mezelf -->
@@ -128,7 +129,7 @@
     <section id="tarieven" class="section3">
       <div class="container">
         <div class="row">
-          <div class="col l8 m10 s12">
+          <div class="col l8 m10 s12" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true" >
             <h4>Tarieven</h4>
             <p>Individuele begeleiding: € 50,- / sessie </p>
             <p>Relatietherapie: € 60,- / sessie </p>
@@ -253,12 +254,15 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/materialize/dist/js/materialize.js"></script>
+    <script src="/bower_components/aos/dist/aos.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
     <script>
       $(".button-collapse").sideNav();
+      AOS.init();
+      
     </script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

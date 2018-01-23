@@ -25,7 +25,7 @@ linkSection2.addEventListener('click', function(event){
 var linkOpleidingen = document.getElementById('mobile-hide-opleiding');
 linkOpleidingen.addEventListener('click', function(event){
     event.preventDefault();
-    let el = document.getElementsByClassName('hidden-text-section2');
+    let el = document.getElementsByClassName('hidden-opleiding-section2');
     for(let i=0; i< el.length; i++){
         el[i].classList.remove("hide-on-med-and-down");
         

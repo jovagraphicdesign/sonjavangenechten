@@ -104,17 +104,17 @@
             <div class="border-left">
               <h6 class="subtitel-section2 hide-on-med-and-down">Gevolgde opleidingen:</h6>
               <a id="mobile-hide-opleiding" class="hide-on-large-only" href="#">Gevolgde opleidingen:</a>
-              <ul class="hide-on-med-and-down hidden-opleiding-section2">
-                <li>Master of Science in de Klinische Psychologie (Open Universiteit)</li>
-                <li>Bachelor of Science in de pyschologie (Open Universiteit)</li>
-                <li>Postgraduaat Oplossingsgerichte en Cognitieve Systeemtherapie (Korzybski Instituut, 2014-2018)</li>
-                <li>Certificaat Deskundige in de oplossingsgerichte cognitieve en systemische therapie bij kinderen en adolescenten (Korzybski Instituut, 2016-2017)</li>
-                <li>Certificaat Deskundige in de oplossingsgerichte cognitieve en systemische traumatologie (Korzybski Instituut, 2016-2017)</li>
-                <li>Certificaat Deskundige in de oplossingsgerichte cognitieve en systeemtherapie bij het autisme spectrum (Korzybski Instituut, 2016-2017)</li>
-                <li>Basisopleiding Genogrammen (2017)</li>
-                <li>Masterclass e-Mental Health (Open Universiteit, 2014)</li>
-                <li>Basisopleiding Kids’s Skills (Ben Furman, 2015)</li>
-                <li>Diverse workshops (zoals Hechting en hechtingstoornissen, kernkwadranten,…)</li>
+              <ul class="fa-ul hide-on-med-and-down hidden-opleiding-section2">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Master of Science in de Klinische Psychologie (Open Universiteit)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Bachelor of Science in de pyschologie (Open Universiteit)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Postgraduaat Oplossingsgerichte en Cognitieve Systeemtherapie (Korzybski Instituut, 2014-2018)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Certificaat Deskundige in de oplossingsgerichte cognitieve en systemische therapie bij kinderen en adolescenten (Korzybski Instituut, 2016-2017)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Certificaat Deskundige in de oplossingsgerichte cognitieve en systemische traumatologie (Korzybski Instituut, 2016-2017)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Certificaat Deskundige in de oplossingsgerichte cognitieve en systeemtherapie bij het autisme spectrum (Korzybski Instituut, 2016-2017)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Basisopleiding Genogrammen (2017)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Masterclass e-Mental Health (Open Universiteit, 2014)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Basisopleiding Kids’s Skills (Ben Furman, 2015)</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Diverse workshops (zoals Hechting en hechtingstoornissen, kernkwadranten,…)</li>
               </ul>
             </div>
           </div>
@@ -148,33 +148,40 @@
       <div id="contact" class="contact-form">
         <h4 >Contact</h4>
         <div class="row">
-          <form class="col s12">
+          <form name="contactform" method="post" action="./mailer.php" class="col s12" role="form">
             <div class="row">
               <div class="input-field col l6 s12">
                   <i class="material-icons prefix">account_circle</i>
-                <input id="naam" type="text" class="validate">
-                <label for="naam">Naam</label>
+                <input id="naam" type="text" name="naam" class="validate">
+                <label for="naam">Voornaam en Naam</label>
               </div>
             </div>
             <div class="row">
                 <div class="input-field col l6 s12">
-                    <i class="material-icons prefix">home</i>
-                  <input id="adres" type="text" class="validate">
-                  <label for="adres">Adres</label>
+                    <i class="material-icons prefix">phone_iphone</i>
+                  <input id="phone" type="text" name="phone" class="validate">
+                  <label for="phone">Telefoonnummer</label>
                 </div>
               </div>
             <div class="row">
               <div class="input-field col l6 s12">
                   <i class="material-icons prefix">email</i>
-                <input id="email" type="email" class="validate">
+                <input id="email" type="email" name="email" class="validate">
                 <label for="email">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col l6 s12">
-                  <i class="material-icons prefix">edit</i>
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1">Bericht</label>
+                  <i class="material-icons prefix">subject</i>
+                <input id="onderwerp" type="text" name="onderwerp" class="validate">
+                <label for="onderwerp">Onderwerp</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col l6 s12">
+                  <i class="material-icons prefix">message</i>
+                <textarea id="bericht" class="materialize-textarea" name="bericht"></textarea>
+                <label for="bericht">Bericht</label>
               </div>
             </div>
             <button class="btn waves-effect waves-light" type="submit" name="action">Verzenden
@@ -189,7 +196,8 @@
             <p> <a href="tel:32474556410"> 0474 55 64 10</a></p>
             <p> <a href="mailto:info@sonjavangenechten.be"> info@sonjavangenechten.be</a></p>
             <a href="https://www.google.be/maps/place/Notenstraat,+3670+Meeuwen-Gruitrode/@51.106402,5.5602979,16.64z/data=!4m5!3m4!1s0x47c0d6c89619217f:0xaa9f40fb35c321d4!8m2!3d51.106193!4d5.5617079" target="_blank">vind me terug op google maps</a>
-            
+            <img class="responsive-img" src="./images/foto-praktijkruimte.png" alt="de praktijkruimte">
+            <i>De praktijkruimte</i>
         </div>
       </div>
     </section>

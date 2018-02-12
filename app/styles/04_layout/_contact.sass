@@ -1,6 +1,7 @@
 .section4
     height: 700px
     position: relative
+    
     .contact-form
         padding: 50px 10px
         height: 115%
@@ -77,3 +78,9 @@ textarea.materialize-textarea:focus:not([readonly]) + label
 
 .input-field .prefix.active
     color: $greenBG
+
+@media only screen and (max-width: 480px)
+    .section4
+        .contact-form
+            width: 96%
+            padding: 50px 0px

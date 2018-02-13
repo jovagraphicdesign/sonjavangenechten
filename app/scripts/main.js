@@ -5,7 +5,7 @@ linkSection1.addEventListener('click', function(event){
     event.preventDefault();
     let el = document.getElementsByClassName('hidden-text-section1');
     for(let i=0; i< el.length; i++){
-        el[i].classList.remove("hide-on-med-and-down");
+        el[i].classList.remove('hide-on-med-and-down');
         this.classList.add('hide');
         this.classList.remove('hide-on-large-only');
     }
@@ -16,7 +16,7 @@ linkSection2.addEventListener('click', function(event){
     event.preventDefault();
     let el = document.getElementsByClassName('hidden-text-section2');
     for(let i=0; i< el.length; i++){
-        el[i].classList.remove("hide-on-med-and-down");
+        el[i].classList.remove('hide-on-med-and-down');
         this.classList.add('hide');
         this.classList.remove('hide-on-large-only');
     }
@@ -27,7 +27,7 @@ linkOpleidingen.addEventListener('click', function(event){
     event.preventDefault();
     let el = document.getElementsByClassName('hidden-opleiding-section2');
     for(let i=0; i< el.length; i++){
-        el[i].classList.remove("hide-on-med-and-down");
+        el[i].classList.remove('hide-on-med-and-down');
         
         this.classList.remove('hide-on-large-only');
     }

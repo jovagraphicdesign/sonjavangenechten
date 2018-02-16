@@ -1,5 +1,4 @@
 
-
 var linkSection1 = document.getElementById('mobile-hide-section1');
 linkSection1.addEventListener('click', function(event){
     event.preventDefault();
@@ -33,8 +32,6 @@ linkOpleidingen.addEventListener('click', function(event){
     }
 });
 
-
-
 $(document).ready(function(){
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -49,7 +46,24 @@ $(document).ready(function(){
         });
     });
     
+    // ScrollMagic Code 
+    // Init ScrollMagic
+    var controller = new ScrollMagic.Controller();
+    // build a scene
+    var showcaseTitleScene = new ScrollMagic.Scene({
+        triggerElement: '#showcaseTitle'
+        
+    })
+    .setClassToggle('#showcaseTitle', 'fade-in') // add class to showcaseTitle
+    .addIndicators()
+    .addTo(controller);
+
+    var showcaseSubtitleScene = new ScrollMagic.Scene({
+        triggerElement: '#showcaseTitle'
+    })
+    .setClassToggle('.subtitel', 'fade-up')
+    .addIndicators()
+    .addTo(controller);
     
-  
 });
 

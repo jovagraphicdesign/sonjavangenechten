@@ -21,21 +21,29 @@
 .titel
     font-family: 'Bitter', serif
     font-size: 48px
-    animation-duration: 2s
-    animation-delay: 0s
+    
+    opacity: 0
+    transform: translateX(100px)
+    transition: all 2s ease-out
 
 .subtitel
     font-size: 36px
-    animation-duration: 1s
-    animation-delay: 1s
+    opacity: 0
+    transform: translateY(100px)
+    transition: all 2s ease-out 2s
    
-   
+// animation with scrollmagic 
+.fade-in
+    opacity: 1
+    transform: translateX(0)
+
+.fade-up
+    opacity: 1
+    transform: translateY(0)
 
 
 @media only screen and (max-width: 768px)
     .showcase 
-        
-
         h1 
             font-size: 36px
             letter-spacing: 1.8px

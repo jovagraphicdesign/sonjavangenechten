@@ -55,14 +55,14 @@ $(document).ready(function(){
         
     })
     .setClassToggle('#showcaseTitle', 'fade-in') // add class to showcaseTitle
-    .addIndicators()
+    //.addIndicators()
     .addTo(controller);
 
     var showcaseSubtitleScene = new ScrollMagic.Scene({
         triggerElement: '#showcaseTitle'
     })
     .setClassToggle('.subtitel', 'fade-up')
-    .addIndicators()
+    //.addIndicators()
     .addTo(controller);
     
 });

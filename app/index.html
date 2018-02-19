@@ -2,14 +2,14 @@
 <html class="no-js" lang="">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114048696-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114048696-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-114048696-1');
-    </script> -->
+    </script>
 
     
     <meta charset="utf-8">
@@ -98,10 +98,10 @@
     <!-- Section 2 Over Mezelf -->
     <section id="over-mezelf" class="section2">
       <div class="container">
-        <h4 class="titel-section2">Over Mezelf</h4>
-        <img id="foto-sonja" class="hide-on-large-only mobile circle responsive-img" src="./images/foto-Sonja.png" alt="portret van Sonja Van Genechten">
+        <h4 id="overMezelf" class="titel-section2">Over Mezelf</h4>
+        <img id="foto-sonja-mobile" class="hide-on-large-only circle responsive-img foto-sonja-mobile" src="./images/foto-Sonja.png" alt="portret van Sonja Van Genechten">
         <div class="row">
-          <div class="col l6 s12">
+          <div id="left" class="col l6 s12 left">
             <p>Het algemeen (psychisch) welzijn van de mens draag ik hoog in het vaandel, ik volg dan ook regelmatig diverse opleidingen en workshops om mij verder te bekwamen en op de hoogte te blijven van de recente ontwikkelingen.</p>
             <a id="mobile-hide-section2" class="hide-on-large-only" href="#">Meer lezen</a>
             <p class="hide-on-med-and-down hidden-text-section2">Ik ben lid van twee intervisiegroepen bestaande uit collega-therapeuten met verschillende opleidingsachtergronden en -ervaringen. Op regelmatige tijdstippen komen wij samen om ons eigen functioneren te bespreken en onze manier van werken telkens bij te sturen en te vernieuwen.</p>
@@ -109,7 +109,7 @@
             Naast mijn psychologische en psychotherapeutische achtergrond heb ik ruim 20 jaar ervaring binnen Human Resources en beschik ik over de nodige levenservaring.
             </p>
           </div>
-          <div class="col l6 s12">
+          <div id="right" class="col l6 s12 right">
             <div class="border-left">
               <h6 class="subtitel-section2 hide-on-med-and-down">Gevolgde opleidingen:</h6>
               <a id="mobile-hide-opleiding" class="hide-on-large-only" href="#">Gevolgde opleidingen:</a>
@@ -128,7 +128,7 @@
             </div>
           </div>
         </div>
-        <img id="foto-sonja" class="hide-on-med-and-down circle responsive-img" src="./images/foto-Sonja.png" alt="portret van Sonja Van Genechten">
+        <img id="foto-sonja" class="hide-on-med-and-down circle responsive-img foto-sonja" src="./images/foto-Sonja.png" alt="portret van Sonja Van Genechten">
       </div>
     </section>
     <!-- End Section 2 Over Mezelf -->
@@ -138,7 +138,7 @@
     <section id="tarieven" class="section3">
       <div class="container">
         <div class="row">
-          <div class="col l8 m10 s12">
+          <div class="col l8 m10 s12 tarief">
             <h4>Tarieven</h4>
             <p>Individuele begeleiding: € 50,- / sessie </p>
             <p>Relatietherapie: € 60,- / sessie </p>
@@ -280,13 +280,12 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/materialize/dist/js/materialize.js"></script>
     <script src="/bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="/bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script>
       $(".button-collapse").sideNav();
-      
-      
     </script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

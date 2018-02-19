@@ -9,10 +9,19 @@
     width: 100%
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%)
     //background-attachment: fixed
-
+    z-index: 2
 .section3
     background-color: $greenBG
+    position: relative
+    
     color: $bodyBG
     padding: 100px 0 300px 0 
-    p 
-        padding-left: 5%
+    .tarief
+        opacity: 0
+        transform: translateY(-400px)
+        transition: all 1.5s ease-out                
+        p 
+            padding-left: 5%
+    .fade-in-down
+        opacity: 1
+        transform: translateY(0)

@@ -1,7 +1,13 @@
 .section2
     padding-top: 55px
     position: relative
-    
+    h4 
+        opacity: 0
+        transform: translateY(-150px)
+        transition: all 2s ease-out 
+    .fade-down
+        opacity: 1
+        transform: translateY(0)
     p,a
         padding-left: 5%
       
@@ -26,16 +32,44 @@
             li 
                 padding-bottom: 5px
 
-    #foto-sonja
+    .foto-sonja
         height: 180px
         border: 3px solid $greenBG
         position: absolute 
         left: 60%
+        opacity: 0
+        transform: rotateY(90deg)
+        transition: all 1s ease-in
+    .rotate-foto
+        opacity: 1
+        transform: rotateY(0deg)
     
-    #foto-sonja.mobile
+    .foto-sonja-mobile
+        border: 3px solid $greenBG
+        position: absolute 
+        left: 60%
         top: -10px
         height: 120px
+        opacity: 0
+        transform: translateX(200px)
+        transition: all 1.5s ease-in
+    .foto-slide-in
+        opacity: 1
+        transform: translateX(0) 
 
+    .left 
+        opacity: 0
+        transform: translateX(-300px)
+        transition: all 2s ease-out
+    
+    .right 
+        opacity: 0
+        transform: translateX(300px)
+        transition: all 2s ease-out
+    
+    .fade-side-in
+        opacity: 1
+        transform: translateX(0)
 
 @media only screen and (max-width: 992px)
     .section2
